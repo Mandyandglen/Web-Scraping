@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mars Homework</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    </head>
+<body>
+        <div id="page1">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="https://mars.nasa.gov/news">Mars News   </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://space-facts.com/mars/">Facts  </a>
+                        </li>
+            
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.jpl.nasa.gov/spaceimages/">Images  </a>
+                        </li>
+                        
+                                  </ul>
+                      </div>
+                  </nav>
+                  <div class="container">
+                        <div class="row">
+                                <div class="col-sm-6">
+                                    <h1 class='text-center mb-3'>Mission to Mars</h1>
+                                   
+                                    
+                                </div>
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                            
+                                            <h2 class='text-left mb-3'>Mars News</h2>
+                                            <h3>{{m.news}}</h3>
+                                                                                       
+                                            <a href="https://www.jpl.nasa.gov/spaceimages/"><img src="{{m.mars_image}}" class="img-thumbnail" alt="Insert Mars Image here"><a>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h1>Weather on Mars</h1>
+                                                     <h3>{{m.weather}}</h3>
+                                        <p><ul id="m_data">
+                                              <div class="row mt-4">
+                                                            <div class="col-sm-6 text-center">
+                                                                    <h1>Mars Facts</h1>        
+                                                                        <p> {{m.facts | safe}}
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-6 text-center">
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 text-center">
+                                                                      <a href=""><img src="https://via.placeholder.com/1x1" class="img-thumbnail" alt="">
+                                                                        <p> 
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+              
+   
+                        <div class="container">
+                                <div class="row">
+                                  <div class="col">
+                                        <a href=""><img src="{{m.hemisphere}}" class="img-thumbnail" alt=""></div>
+                                  <div class="col">
+                                        <a href=""><img src="{{m.hemisphere2}}" class="img-thumbnail" alt=""></div>
+                                  <div class="w-100"></div>
+                                  <div class="col">
+                                        <a href=""><img src="{{m.hemisphere2}}" class="img-thumbnail" alt=""></div>
+                                  <div class="col">
+                                        <a href=""><img src="{{m.hemisphere4}}" class="img-thumbnail" alt=""></div>
+                                </div>
+                              </div>
+                                                                      
+    
+</body>
+</html>
